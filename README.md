@@ -1,5 +1,6 @@
 # libcbg
 
+![image](https://i.loli.net/2020/09/06/gi4PxlFknpwZbYC.png)
 A Ultra Fast Ethornell/BGI CompressedBG Image Format Codec.
 
 Use multithreads huffman coding. All code write by C/C++. Ultra speed assurance.
