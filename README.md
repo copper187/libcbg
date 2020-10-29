@@ -14,6 +14,8 @@ Here are full encoder APIs guide.
 
 Of course you also can use my decoder if you like it. :)
 
+
+
 cbg_codec::api* cbg1_enc_ default
 
 ( 
@@ -32,7 +34,7 @@ Explanation:
 
 Encode to cbg image format by pixels in raw pixel buffer and use height, width and depth you pass. Write the cbg bit stream (include “CompressedBG___” magic bytes and all file header information.) in a bitstream buffer.
 
-libcbg will return a “cbg_codec::api*” type struct pointer. Change to P15 to read more about this struct.
+libcbg will return a “cbg_codec::api*” type struct pointer. Change to the end of this guide to read more about this struct.
 
 libcbg will use default key (0x31676263 or “cbg1”) and write default encoder information (“bylibcbg”).
 
@@ -49,51 +51,73 @@ Tips: check height and width and pass a correct num.
 Tips: check color depth and pass a correct num.
 
 
+
+
 cbg_codec::api* cbg1_enc_advanced
-( int height,
+
+( 
+int height,
+
 int width,
+
 int color_depth,
-  unsigned int/DWORD key,
-  char *encoder_information,
-  bool huffman_coding_settings,
-  unsigned char/BYTE *raw_pixel_buffer )
+
+unsigned int/DWORD key,
+  
+char *encoder_information,
+  
+bool huffman_coding_settings,
+  
+unsigned char/BYTE *raw_pixel_buffer 
+
+)
+
 Explanation:
-	Encode to cbg image format by pixels in raw pixel buffer and use height, width, depth and key you pass. Write the cbg bit stream(include “CompressedBG___” magic bytes and all file header information.) in a bitstream buffer.
-	libcbg will return a “cbg_codec::api*” type struct pointer. Change to P15 to read more about this struct.	
-	libcbg will write encoder information you pass.
-	libcbg will use singlethread if the huffman coding settings is false,
+
+Encode to cbg image format by pixels in raw pixel buffer and use height, width, depth and key you pass. Write the cbg bit stream(include “CompressedBG___” magic bytes and all file header information.) in a bitstream buffer.
+
+libcbg will return a “cbg_codec::api*” type struct pointer. Change to P15 to read more about this struct.
+
+libcbg will write encoder information you pass.
+
+libcbg will use singlethread if the huffman coding settings is false,
 and will use multithreads if it is true.
+
 Tips: libcbg will not use less memory if you use singlethread coding. Maybe support in next version? (maybe).
+
 Error codes:
-	0x1: Height or width are wrong.(negative or zero).
+
+0x1: Height or width are wrong.(negative or zero).
+
 Tips: check height and width and pass a correct num.
+
 	0x1: Wrong or not support color depth.
+
 Tips: check color depth and pass a correct num.
+
 Warning codes:
+
 	0x101: Encoder information is too long(Out of 8 bytes).
+
 Tips: libcbg will only be use first 8 bytes character.
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 int cbg1_encToFile_ default
-( int height,
+
+( 
+
+int height,
+
 int width,
+
 int color_depth,
+
 unsigned char/BYTE *raw_pixel_buffer,
+
 char *filename)
+
 Explanation:
 	Encode to cbg image format by pixels in raw pixel buffer and use height, width and depth you pass. Write the cbg bit stream (include “CompressedBG___” magic bytes and all file header information.) in bit stream buffer. Write the bit stream in a file you designated and only return a successed code(0x0). 
 	libcbg will use default key (0x31676263 or “cbg1”) and write default encoder information (“bylibcbg”).
