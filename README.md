@@ -10,22 +10,42 @@ Now this codec can encode and decode cbg1 image.(The CompressedBG Image Format h
 I will not write cbg2 part. Because most base Ethornell/BGI Engine games only use cbg1. even if it use cbg2, You don't need to recompress the image. Just use a non-compress image also can change the game image.
 
 Here are full encoder APIs guide.
-(Not include decoder. Because you can find lots of great decoder project (such as GARbro by morkt --> https://github.com/morkt/GARbro/blob/master/ArcFormats/Ethornell/ImageCBG.cs). Of course you also can use my decoder if you like it. :)
+(Not include decoder. Because you can find lots of great decoder project (such as GARbro by morkt --> https://github.com/morkt/GARbro/blob/master/ArcFormats/Ethornell/ImageCBG.cs). 
+
+Of course you also can use my decoder if you like it. :)
 
 cbg_codec::api* cbg1_enc_ default
-( int height,
+
+( 
+
+int height,
+
 int width,
+
 int color_depth,
-unsigned char/BYTE *raw_pixel_buffer)
+
+unsigned char/BYTE *raw_pixel_buffer
+
+)
+
 Explanation:
-	Encode to cbg image format by pixels in raw pixel buffer and use height, width and depth you pass. Write the cbg bit stream (include “CompressedBG___” magic bytes and all file header information.) in a bitstream buffer.
-	libcbg will return a “cbg_codec::api*” type struct pointer. Change to P15 to read more about this struct.	
-	libcbg will use default key (0x31676263 or “cbg1”) and write default encoder information (“bylibcbg”).
-	libcbg will use default huffman coding settings(multithreads).
+
+Encode to cbg image format by pixels in raw pixel buffer and use height, width and depth you pass. Write the cbg bit stream (include “CompressedBG___” magic bytes and all file header information.) in a bitstream buffer.
+
+libcbg will return a “cbg_codec::api*” type struct pointer. Change to P15 to read more about this struct.
+
+libcbg will use default key (0x31676263 or “cbg1”) and write default encoder information (“bylibcbg”).
+
+libcbg will use default huffman coding settings(multithreads).
+
 Error codes:
-	0x1: Height or width are wrong. (negative or zero).
+
+0x1: Height or width are wrong. (negative or zero).
+
 Tips: check height and width and pass a correct num.
-	0x2: Wrong or not support color depth.
+
+0x2: Wrong or not support color depth.
+
 Tips: check color depth and pass a correct num.
 
 
