@@ -6,7 +6,7 @@
 
 ### V2.0.1.0 Update --- 2021.02.17
 
-* Fixed lots of memory leak bugs. Now this encoder can uses 75% less memory than the 1.x encoder.
+* Fixed lots of memory leak bugs. Now this encoder can uses 75% or more less memory than the 1.x encoder.
 
 * Fixed some other bugs.
 
