@@ -10,7 +10,7 @@
 
 * Fixed some other bugs.
 
-
+<br>
 A Ultra Fast Ethornell/BGI CompressedBG Image Format Codec.
 
 Use multithreads huffman coding. All code write by C/C++. Ultra speed assurance.
