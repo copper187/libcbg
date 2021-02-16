@@ -11,7 +11,7 @@
 * Fixed some other bugs.
 
 <br>
-A Ultra Fast Ethornell/BGI CompressedBG Image Format Codec.
+A Ultra Fast Ethornell/BGI CompressedBG Image Format Codec. Licensed under GNU LGPL v3 license.
 
 Use multithreads huffman coding. All code write by C/C++. Ultra speed assurance.
 
