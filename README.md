@@ -2,7 +2,13 @@
 
 ![image](https://i.loli.net/2020/09/06/gi4PxlFknpwZbYC.png)
 
-### V2.0.1.0 Update
+## Version 2.x
+
+### V2.0.1.0 Update --- 2021.02.17
+
+* Fixed lots of memory leak bugs. Now this encoder can use less more 75% memory than 1.x encoder.
+
+* Fixed some other bugs.
 
 A Ultra Fast Ethornell/BGI CompressedBG Image Format Codec.
 
