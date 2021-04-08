@@ -21,7 +21,7 @@ Now this codec can encode and decode cbg1 image.(The CompressedBG Image Format h
 
 The cbg2 compression rate has a greatly improved with cbg1. And since 2012 or 2013, Most of Ethornell/BGI Engine were compatible cbg1/cbg2 image format. So I decide write cbg2 part.
 
-Read this [PDF](https://github.com/copper187/libcbg/blob/master/libcbgDevelopmentDocumentsV3.pdf) to view full encoder APIs development documents.
+Read this [PDF](https://github.com/copper187/libcbg/blob/master/libcbgDevelopmentDocumentsV4.pdf) to view full encoder APIs development documents.
 
 (Not include decoder. Because you can find lots of great decoder project (such as GARbro by morkt --> https://github.com/morkt/GARbro/blob/master/ArcFormats/Ethornell/ImageCBG.cs). 
 
