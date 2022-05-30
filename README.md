@@ -15,7 +15,7 @@ You need AVX512(F, VL, DQ, BW)
 
 Cannot run on Xeon Phi processors (Knights Landing / Knights Mill, etc).
 
-Test passed on 11th Core Engineering Sample chip (Rocket Lake-S. Stepping A0). 
+Test passed on 11th Core Engineering Sample chip (Rocket Lake-S. Revision A0). 
 
 ## Version 2.x
 
