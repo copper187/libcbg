@@ -4,7 +4,7 @@
 
 ## Version 3.x
 
-### V3.0.0 Update
+### V3.0.0 Update --- 2022.05.30
 
 * AVX2 and AVX512 assembly optimize.
 * New method for transform pixels.
