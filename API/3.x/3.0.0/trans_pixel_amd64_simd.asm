@@ -105,7 +105,7 @@ trans_pixel_avx2_normalround_process proc
 trans_pixel_avx2_normalround_process endp
 
 ; AVX512 part. You need AVX512(F, VL, DQ, BW)
-; Cannot run in Xeon Phi processors (Knights Landing / Knights Mill, etc).
+; Cannot run on Xeon Phi processors (Knights Landing / Knights Mill, etc).
 ; ecx = start_offet, edx = rounds, r8d = color_channels, r9 = raw_pixel_buffer, rsi = transed_pixel_buffer
 ; Test passed on 11th Core Engineering Sample chip (Rocket Lake-S). 
 
