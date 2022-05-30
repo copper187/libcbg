@@ -9,6 +9,8 @@
 * AVX2 and AVX512 assembly optimize.
 * New method for transform pixels.
 
+Special notices for AVX512
+
 ## Version 2.x
 
 ### V2.0.1.0 Update --- 2021.02.17
