@@ -13,7 +13,7 @@ Special notices for AVX512
 
 You need AVX512(F, VL, DQ, BW)
 
-Cannot run in Xeon Phi processors (Knights Landing / Knights Mill, etc).
+Cannot run on Xeon Phi processors (Knights Landing / Knights Mill, etc).
 
 Test passed on 11th Core Engineering Sample chip (Rocket Lake-S). 
 
