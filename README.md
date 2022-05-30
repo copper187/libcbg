@@ -2,6 +2,13 @@
 
 ![image](https://i.loli.net/2020/09/06/gi4PxlFknpwZbYC.png)
 
+## Version 3.x
+
+### V3.0.0 Update
+
+* AVX2 and AVX512 assembly optimization.
+* New method for transform pixels.
+
 ## Version 2.x
 
 ### V2.0.1.0 Update --- 2021.02.17
