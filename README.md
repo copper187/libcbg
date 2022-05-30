@@ -6,7 +6,7 @@
 
 ### V3.0.0 Update
 
-* AVX2 and AVX512 assembly optimization.
+* AVX2 and AVX512 assembly optimize.
 * New method for transform pixels.
 
 ## Version 2.x
