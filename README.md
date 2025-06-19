@@ -3,7 +3,18 @@
 ![image](https://i.loli.net/2020/09/06/gi4PxlFknpwZbYC.png)
 
 ## Version 3.x
+### V3.1 Update --- Incoming
+I have confirmed we can use gf2p8affineqb to improve the int8 shifting. It can use in pixel transform. I have implemented a function prototype and confirmed a good speedup(150ms -> 45ms).
 
+The code will be updated soon. 
+
+Very thanks for these articles!
+
+https://wunkolo.github.io/post/2020/11/gf2p8affineqb-int8-shifting/
+
+https://wunkolo.github.io/post/2020/11/gf2p8affineqb-bit-reversal/
+
+and thanks for icx and clang compiler for specific optimization ideas.
 ### V3.0.0 Update --- 2022.05.30
 
 * AVX2 and AVX512 assembly optimize.
