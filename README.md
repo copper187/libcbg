@@ -8,7 +8,7 @@ I have confirmed we can use gf2p8affineqb to improve the int8 shifting. It can u
 
 The code will be updated soon. 
 
-The gf2p8affineqb instruction, In GFNI instructions set. Support since IceLake CPUs (3rd Gen Intel Xeon Scalable processors). Although is introduced alongside avx512, It is still supported on newer CPUs such as AlderLake(12th Intel core) that do not support avx512. It just does not support 512-bit width and EVEX encoding.
+The gf2p8affineqb instruction, In GFNI instructions set. Support since IceLake CPUs (3rd Gen Intel Xeon Scalable processors). Although is introduced alongside avx512, It is still supported on newer CPUs such as AlderLake and later processors(12th/13th/14th/Ultra100/Ultra200 Intel core) that do not support avx512. It just does not support 512-bit width and EVEX encoding.
 
 Very thanks for these articles!
 
