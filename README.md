@@ -10,6 +10,8 @@ The code will be updated soon.
 
 The gf2p8affineqb instruction, In GFNI instructions set. Support since IceLake CPUs (3rd Gen Intel Xeon Scalable processors). Although is introduced alongside avx512, It is still supported on newer CPUs such as AlderLake and later processors(12th/13th/14th/Ultra100/Ultra200 Intel core) that do not support avx512. It just does not support 512-bit width and EVEX encoding.
 
+I will also add an APX version to further optimize the use of GPRs.
+
 Very thanks for these articles!
 
 https://wunkolo.github.io/post/2020/11/gf2p8affineqb-int8-shifting/
